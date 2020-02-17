@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		A4B4A01323FA8E5700E17C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4A01223FA8E5700E17C6D /* AppDelegate.swift */; };
 		A4B4A01523FA8E5700E17C6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4A01423FA8E5700E17C6D /* SceneDelegate.swift */; };
-		A4B4A01723FA8E5700E17C6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4A01623FA8E5700E17C6D /* ViewController.swift */; };
+		A4B4A01723FA8E5700E17C6D /* NViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4A01623FA8E5700E17C6D /* NViewController.swift */; };
 		A4B4A01A23FA8E5700E17C6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B4A01823FA8E5700E17C6D /* Main.storyboard */; };
 		A4B4A01C23FA8E5D00E17C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B4A01B23FA8E5D00E17C6D /* Assets.xcassets */; };
 		A4B4A01F23FA8E5D00E17C6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B4A01D23FA8E5D00E17C6D /* LaunchScreen.storyboard */; };
+		A4B4A02723FA8F8100E17C6D /* KViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4A02623FA8F8100E17C6D /* KViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A4B4A00F23FA8E5700E17C6D /* Product1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Product1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B4A01223FA8E5700E17C6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4B4A01423FA8E5700E17C6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A4B4A01623FA8E5700E17C6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4B4A01623FA8E5700E17C6D /* NViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NViewController.swift; sourceTree = "<group>"; };
 		A4B4A01923FA8E5700E17C6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4B4A01B23FA8E5D00E17C6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4B4A01E23FA8E5D00E17C6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4B4A02023FA8E5D00E17C6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B4A02623FA8F8100E17C6D /* KViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				A4B4A01223FA8E5700E17C6D /* AppDelegate.swift */,
 				A4B4A01423FA8E5700E17C6D /* SceneDelegate.swift */,
-				A4B4A01623FA8E5700E17C6D /* ViewController.swift */,
+				A4B4A01623FA8E5700E17C6D /* NViewController.swift */,
+				A4B4A02623FA8F8100E17C6D /* KViewController.swift */,
 				A4B4A01823FA8E5700E17C6D /* Main.storyboard */,
 				A4B4A01B23FA8E5D00E17C6D /* Assets.xcassets */,
 				A4B4A01D23FA8E5D00E17C6D /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4B4A01723FA8E5700E17C6D /* ViewController.swift in Sources */,
+				A4B4A01723FA8E5700E17C6D /* NViewController.swift in Sources */,
 				A4B4A01323FA8E5700E17C6D /* AppDelegate.swift in Sources */,
+				A4B4A02723FA8F8100E17C6D /* KViewController.swift in Sources */,
 				A4B4A01523FA8E5700E17C6D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yutaudemy.Product1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yutaudemy.Product1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
