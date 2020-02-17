@@ -149,9 +149,11 @@ class KViewController: UIViewController {
         niweVC.result2 = result2
         niweVC.result3 = result3
         niweVC.result4 = result4
+
         
-        present(niweVC, animated: true, completion: nil)
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.present(niweVC, animated: true, completion: nil)
+        }
     }
     
     
