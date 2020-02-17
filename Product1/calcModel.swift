@@ -12,24 +12,20 @@ class CalcModel {
     var number1 = Int()
     var number2 = Int()
     
-    init(CalcA: Int,CalcB: Int) {
-        number1 = CalcA
-        number2 = CalcB
-    }
     
-    func plus() -> Int {
+    func plus(number1:Int, number2: Int) -> Int {
         return number1 + number2
     }
     
-    func minus() -> Int {
+    func minus(number1:Int, number2: Int) -> Int {
         return number1 - number2
     }
 
-    func div() -> Int {
+    func div(number1:Int, number2: Int) -> Int {
         return number1 / number2
     }
     
-    func mul() -> Int {
+    func mul(number1:Int, number2: Int) -> Int {
         return number1 * number2
     }
 

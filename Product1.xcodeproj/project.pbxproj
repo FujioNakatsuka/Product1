@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7FAB115923FAA22D0075FD58 /* calcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB115823FAA22D0075FD58 /* calcModel.swift */; };
+		7FAB115923FAA22D0075FD58 /* CalcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAB115823FAA22D0075FD58 /* CalcModel.swift */; };
 		A4B4A01323FA8E5700E17C6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4A01223FA8E5700E17C6D /* AppDelegate.swift */; };
 		A4B4A01523FA8E5700E17C6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4A01423FA8E5700E17C6D /* SceneDelegate.swift */; };
 		A4B4A01723FA8E5700E17C6D /* NViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4A01623FA8E5700E17C6D /* NViewController.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7FAB115823FAA22D0075FD58 /* calcModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calcModel.swift; sourceTree = "<group>"; };
+		7FAB115823FAA22D0075FD58 /* CalcModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcModel.swift; sourceTree = "<group>"; };
 		A4B4A00F23FA8E5700E17C6D /* Product1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Product1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B4A01223FA8E5700E17C6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4B4A01423FA8E5700E17C6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 				A4B4A01423FA8E5700E17C6D /* SceneDelegate.swift */,
 				A4B4A01623FA8E5700E17C6D /* NViewController.swift */,
 				A4B4A02623FA8F8100E17C6D /* KViewController.swift */,
-				7FAB115823FAA22D0075FD58 /* calcModel.swift */,
+				7FAB115823FAA22D0075FD58 /* CalcModel.swift */,
 				A4B4A01823FA8E5700E17C6D /* Main.storyboard */,
 				A4B4A01B23FA8E5D00E17C6D /* Assets.xcassets */,
 				A4B4A01D23FA8E5D00E17C6D /* LaunchScreen.storyboard */,
@@ -146,7 +146,7 @@
 			files = (
 				A4B4A01723FA8E5700E17C6D /* NViewController.swift in Sources */,
 				A4B4A01323FA8E5700E17C6D /* AppDelegate.swift in Sources */,
-				7FAB115923FAA22D0075FD58 /* calcModel.swift in Sources */,
+				7FAB115923FAA22D0075FD58 /* CalcModel.swift in Sources */,
 				A4B4A02723FA8F8100E17C6D /* KViewController.swift in Sources */,
 				A4B4A01523FA8E5700E17C6D /* SceneDelegate.swift in Sources */,
 			);
