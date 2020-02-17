@@ -116,6 +116,7 @@ class KViewController: UIViewController {
         actionButton.translatesAutoresizingMaskIntoConstraints = false
         actionButton.backgroundColor = .systemRed
         actionButton.setTitle("計算結果", for: .normal)
+        actionButton.addTarget(self, action: #selector(calc(suuji1:suuji2:)), for: .touchUpInside)
         
         
         NSLayoutConstraint.activate([
@@ -127,4 +128,12 @@ class KViewController: UIViewController {
     }
     
 
+    @objc func calc() {
+        result1 = calcModel.plus(number1: textField1, number2: textField2)
+        result2 = calcModel.minus(number1: suuji1, number2: suuji2)
+        result3 = calcModel.div(number1: suuji1, number2: suuji2)
+        result4 = calcModel.mul(number1: suuji1, number2: suuji2)
+
+    }
+    
 }
