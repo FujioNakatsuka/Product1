@@ -8,26 +8,28 @@
 
 import Foundation
 
-class CalcModel {
+class CalcModel{
     var number1 = Int()
     var number2 = Int()
     
+    init(CalcA: Int,CalcB: Int) {
+        number1 = CalcA
+        number2 = CalcB
+    }
     
-    func plus(number1:Int, number2: Int) -> Int {
+    func plus() -> Int {
         return number1 + number2
     }
     
-    func minus(number1:Int, number2: Int) -> Int {
+    func min() -> Int {
         return number1 - number2
     }
-
-    func div(number1:Int, number2: Int) -> Int {
+    
+    func div() -> Int {
         return number1 / number2
     }
     
-    func mul(number1:Int, number2: Int) -> Int {
+    func mult() -> Int {
         return number1 * number2
     }
-
-    
 }
