@@ -28,20 +28,20 @@ class NiewController: UIViewController {
 
      
         label1.frame = CGRect(x:150, y:250, width:160, height:30)
-        label1.text = "result1"
+        label1.text = result1
         self.view.addSubview(label1)
         
         label2.frame = CGRect(x:150, y:300, width:160, height:30)
-        label2.text = "result2"
+        label2.text = result2
                self.view.addSubview(label2)
         
         label3.frame = CGRect(x:150, y:350, width:160, height:30)
-        label3.text = "result3"
+        label3.text = result3
         self.view.addSubview(label3)
         
         
         label4.frame = CGRect(x:150, y:400, width:160, height:30)
-        label4.text = "result4"
+        label4.text = result4
         self.view.addSubview(label4)
         
         
