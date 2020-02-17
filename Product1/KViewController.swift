@@ -28,6 +28,9 @@ class KViewController: UIViewController {
     //掛け算
     var result4 = UILabel()
     
+    //計算結果を出すボタン
+    var actionButton = UIButton()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +38,7 @@ class KViewController: UIViewController {
         view.backgroundColor = .systemBlue
         configureTextField()
         configureLabel()
+        configureButton()
     }
     
 
@@ -51,15 +55,15 @@ class KViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             textField1.topAnchor.constraint(equalTo: view.topAnchor, constant: 70),
-                textField1.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-                textField1.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-                textField1.heightAnchor.constraint(equalToConstant: 50),
-                
-                textField2.topAnchor.constraint(equalTo: textField1.topAnchor, constant: 100),
-                    textField2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-                    textField2.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-                    textField2.heightAnchor.constraint(equalToConstant: 50),
-            ])
+            textField1.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            textField1.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            textField1.heightAnchor.constraint(equalToConstant: 50),
+            
+            textField2.topAnchor.constraint(equalTo: textField1.topAnchor, constant: 100),
+            textField2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            textField2.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            textField2.heightAnchor.constraint(equalToConstant: 50),
+        ])
     }
     
     func configureLabel() {
@@ -103,12 +107,23 @@ class KViewController: UIViewController {
             result4.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             result4.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             result4.heightAnchor.constraint(equalToConstant: 50),
-            
         ])
-        
-        
-        
     }
-   
+    
+    func configureButton() {
+        view.addSubview(actionButton)
+        actionButton.translatesAutoresizingMaskIntoConstraints = false
+        actionButton.backgroundColor = .systemRed
+        actionButton.setTitle("計算結果", for: .normal)
+        
+        
+        NSLayoutConstraint.activate([
+            actionButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -80),
+        actionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+        actionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+        actionButton.heightAnchor.constraint(equalToConstant: 50),
+        ])
+    }
+    
 
 }
