@@ -28,23 +28,38 @@ class KViewController: UIViewController {
     //掛け算
     var result4 = UILabel()
     
-    var padding:CGFloat = 50
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.backgroundColor = .systemBlue
+        configureTextField()
     }
     
 
     func configureTextField() {
         view.addSubview(textField1)
         textField1.translatesAutoresizingMaskIntoConstraints = false
+        textField1.backgroundColor = .systemGray
+        textField1.placeholder = "何か数字を書いてください"
+        
+        view.addSubview(textField2)
+        textField2.translatesAutoresizingMaskIntoConstraints = false
+        textField2.backgroundColor = .systemGray
+        textField2.placeholder = "何か数字を書いてください"
         
         NSLayoutConstraint.activate([
-            textField1.topAnchor.constraint(equalTo: view.topAnchor, constant: padding),
-                textField1.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
-                textField1.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-                textField1.heightAnchor.constraint(equalToConstant: 50)
+            textField1.topAnchor.constraint(equalTo: view.topAnchor, constant: 70),
+                textField1.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+                textField1.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+                textField1.heightAnchor.constraint(equalToConstant: 50),
+                
+                textField2.topAnchor.constraint(equalTo: textField1.topAnchor, constant: 100),
+                    textField2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+                    textField2.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+                    textField2.heightAnchor.constraint(equalToConstant: 50),
+
+                
             ])
         
     }
