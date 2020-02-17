@@ -34,6 +34,7 @@ class KViewController: UIViewController {
 
         view.backgroundColor = .systemBlue
         configureTextField()
+        configureLabel()
     }
     
 
@@ -58,9 +59,54 @@ class KViewController: UIViewController {
                     textField2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
                     textField2.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
                     textField2.heightAnchor.constraint(equalToConstant: 50),
-
-                
             ])
+    }
+    
+    func configureLabel() {
+        view.addSubview(result1)
+        result1.translatesAutoresizingMaskIntoConstraints = false
+        result1.textColor = .systemOrange
+        result1.text = "足し算の結果が出ます"
+        
+        view.addSubview(result2)
+        result2.translatesAutoresizingMaskIntoConstraints = false
+        result2.textColor = .systemOrange
+        result2.text = "引き算の結果が出ます"
+        
+        view.addSubview(result3)
+        result3.translatesAutoresizingMaskIntoConstraints = false
+        result3.textColor = .systemOrange
+        result3.text = "割り算の結果が出ます"
+        
+        view.addSubview(result4)
+        result4.translatesAutoresizingMaskIntoConstraints = false
+        result4.textColor = .systemOrange
+        result4.text = "掛け算の結果が出ます"
+        
+        NSLayoutConstraint.activate([
+            result1.topAnchor.constraint(equalTo: textField2.topAnchor, constant: 150),
+            result1.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            result1.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            result1.heightAnchor.constraint(equalToConstant: 50),
+            
+            result2.topAnchor.constraint(equalTo: result1.topAnchor, constant: 80),
+            result2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            result2.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            result2.heightAnchor.constraint(equalToConstant: 50),
+            
+            result3.topAnchor.constraint(equalTo: result2.topAnchor, constant: 80),
+            result3.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            result3.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            result3.heightAnchor.constraint(equalToConstant: 50),
+            
+            result4.topAnchor.constraint(equalTo: result3.topAnchor, constant: 80),
+            result4.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            result4.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            result4.heightAnchor.constraint(equalToConstant: 50),
+            
+        ])
+        
+        
         
     }
    
