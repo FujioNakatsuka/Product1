@@ -15,6 +15,8 @@ class NiewController: UIViewController {
     var result2 = String()
     var result3 = String()
     var result4 = String()
+    
+    
     let label1 = UILabel()
     let label2 = UILabel()
     let label3 = UILabel()
@@ -43,6 +45,7 @@ class NiewController: UIViewController {
         label4.frame = CGRect(x:150, y:400, width:160, height:30)
         label4.text = result4
         self.view.addSubview(label4)
+        
         
         
     }
