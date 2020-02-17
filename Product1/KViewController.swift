@@ -25,6 +25,8 @@ class KViewController: UIViewController {
     //掛け算の結果
     var result4 = UILabel()
     
+    
+    
 
     
     //計算結果を出すボタン
@@ -128,8 +130,6 @@ class KViewController: UIViewController {
 
     @objc func calc() {
         //計算クラスのインスタンス化
-        
-        
         let calcModel = CalcModel(CalcA: Int(textField1.text!)!, CalcB: Int(textField2.text!)!)
         
         let num1 = calcModel.plus()
@@ -141,6 +141,17 @@ class KViewController: UIViewController {
         result2.text = String(num2)
         result3.text = String(num3)
         result4.text = String(num4)
+        
+        
+        //値を渡して画面遷移
+        let niweVC = NiewController()
+        niweVC.result1 = result1
+        niweVC.result2 = result2
+        niweVC.result3 = result3
+        niweVC.result4 = result4
+        
+        present(niweVC, animated: true, completion: nil)
+        
     }
     
     
