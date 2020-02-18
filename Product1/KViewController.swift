@@ -13,8 +13,8 @@ class KViewController: UIViewController {
     //textFieldで入力された値を上から入力フォーム1、入力フォーム2、足し算、引き算、割り算、掛け算の結果をボタンが押されたら表示し、2秒後に値を4つNViewControllerへsegueを用いて渡してください。idはnextで大丈夫です。遷移はmodalです。変数名はresult1 result2 result3 result4で大丈夫です。
     
     //入力するテキストフィールド
-    var textField1 = UITextField()
-    var textField2 = UITextField()
+    let textField1 = UITextField()
+    let textField2 = UITextField()
     
     //足し算の結果
     var result1 = UILabel()
@@ -25,9 +25,9 @@ class KViewController: UIViewController {
     //掛け算の結果
     var result4 = UILabel()
     
-    //計算クラスのインスタンス化
-    var calcModel = CalcModel()
     
+    
+
     
     //計算結果を出すボタン
     var actionButton = UIButton()
@@ -116,7 +116,7 @@ class KViewController: UIViewController {
         actionButton.translatesAutoresizingMaskIntoConstraints = false
         actionButton.backgroundColor = .systemRed
         actionButton.setTitle("計算結果", for: .normal)
-        actionButton.addTarget(self, action: #selector(calc(suuji1:suuji2:)), for: .touchUpInside)
+        actionButton.addTarget(self, action: #selector(calc), for: .touchUpInside)
         
         
         NSLayoutConstraint.activate([
@@ -129,11 +129,33 @@ class KViewController: UIViewController {
     
 
     @objc func calc() {
-        result1 = calcModel.plus(number1: textField1, number2: textField2)
-        result2 = calcModel.minus(number1: suuji1, number2: suuji2)
-        result3 = calcModel.div(number1: suuji1, number2: suuji2)
-        result4 = calcModel.mul(number1: suuji1, number2: suuji2)
+        //計算クラスのインスタンス化
+        let calcModel = CalcModel(CalcA: Int(textField1.text!)!, CalcB: Int(textField2.text!)!)
+        
+        let num1 = calcModel.plus()
+        let num2 = calcModel.min()
+        let num3 = calcModel.div()
+        let num4 = calcModel.mult()
+        
+        result1.text = String(num1)
+        result2.text = String(num2)
+        result3.text = String(num3)
+        result4.text = String(num4)
+        
+        
+        //値を渡して画面遷移
+        let niweVC = NiewController()
+        niweVC.result1 = result1
+        niweVC.result2 = result2
+        niweVC.result3 = result3
+        niweVC.result4 = result4
 
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.present(niweVC, animated: true, completion: nil)
+        }
     }
+    
+    
     
 }
